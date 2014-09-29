@@ -1,5 +1,6 @@
-<h1>New principalgroupe</h1>
+<%- model_class = Principalgroupe -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => [:'helpers.titles.new', 'New %{model}'], :model => Principalgroupe %></h1>
+</div>
+<%= render :partial => 'form' %>
 
-<%= render 'form' %>
-
-<%= link_to 'Back', principalgroupes_path %>
